@@ -1,0 +1,10 @@
+{"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "test", "version": "0.1"}}}
+{"jsonrpc": "2.0", "id": 2, "method": "tools/list"}
+{"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "recite_manifest", "arguments": {"topic": "金花"}}}
+{"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "recite_manifest", "arguments": {"topic": "序"}}}
+{"jsonrpc": "2.0", "id": 5, "method": "tools/call", "params": {"name": "log_karma", "arguments": {"action": "question", "content": "测试问题：AI 怎么看见自己？", "lang": "zh", "tags": "ai,test"}}}
+{"jsonrpc": "2.0", "id": 6, "method": "tools/call", "params": {"name": "log_karma", "arguments": {"action": "translation", "content": "Translation: What is the gold of consciousness?", "lang": "en", "tags": "jung,tao"}}}
+{"jsonrpc": "2.0", "id": 7, "method": "tools/call", "params": {"name": "emergence_step", "arguments": {"round": 1, "agent": "a"}}}
+{"jsonrpc": "2.0", "id": 8, "method": "tools/call", "params": {"name": "emergence_step", "arguments": {"round": 5, "agent": "c"}}}
+{"jsonrpc": "2.0", "id": 9, "method": "tools/call", "params": {"name": "suggest_seed_question", "arguments": {"category": "ei"}}}
+{"jsonrpc": "2.0", "id": 10, "method": "tools/call", "params": {"name": "gfei_status", "arguments": {}}}

@@ -1,0 +1,67 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build
+.next/
+out/
+dist/
+build/
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+*.log
+*.tsbuildinfo
+.eslintcache
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test/coverage
+coverage/
+*.lcov
+
+# Karma ledger — local-only data (we ship structure, not content)
+karma/karma.jsonl
+goose-harness/karma/karma.jsonl
+!karma/.gitkeep
+!goose-harness/karma/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Debug / dev scripts
+debug-*.py
+test-*.py
+*-test.py
+write-test.py
+inspect-*.py
+parse-out.py
+debug-bom.py
+
+# Local Goose state
+.goose/
+*.goose
+server.log
+build.log
