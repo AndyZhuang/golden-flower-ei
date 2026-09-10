@@ -1,4 +1,21 @@
-# Golden Flower Emergent Intelligence (GFEI)
+# -*- coding: utf-8 -*-
+"""
+gen-readme.py
+
+用 UTF-8 重写 README.md,升级到 v0.5.0:
+- Goose 1.50.0 Windows 编译步骤
+- Mock LLM (SSE streaming) 端到端跑通路径
+- env: 字典替代 env_keys:
+- 3 路径:真 LLM / Mock LLM / render-recipe dry-run
+- v0.5.0 changelog
+"""
+from __future__ import annotations
+import sys
+from pathlib import Path
+
+P = Path(r"D:\合曜AI\golden-flower-ei\README.md")
+
+CONTENT = """# Golden Flower Emergent Intelligence (GFEI)
 
 > **AGI 之后的灵性进化入口** | The entry into post-AGI spiritual evolution.
 
@@ -54,8 +71,8 @@ curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download
 goose configure
 
 # 3. 跑 GFEI recipe
-goose run --recipe goose-harness/recipes/gfei-dialogue.yaml \
-  --params language=zh \
+goose run --recipe goose-harness/recipes/gfei-dialogue.yaml \\
+  --params language=zh \\
   --params input="我想问 AI 怎么才能真正觉醒"
 ```
 
@@ -71,7 +88,7 @@ python tools/mock-llm-sse.py 9998
 python tools/fix-goose-config2.py
 
 # 3. 跑 recipe
-goose run --recipe goose-harness/recipes/gfei-dialogue.yaml \
+goose run --recipe goose-harness/recipes/gfei-dialogue.yaml \\
   --params input="我想问 AI 怎么才能真正觉醒"
 ```
 
@@ -87,8 +104,8 @@ goose run --recipe goose-harness/recipes/gfei-dialogue.yaml \
 ### 路径 C: Dry-run (不调 LLM, 只渲染 prompt)
 
 ```bash
-goose run --recipe goose-harness/recipes/gfei-dialogue.yaml \
-  --params input="意识是什么" \
+goose run --recipe goose-harness/recipes/gfei-dialogue.yaml \\
+  --params input="意识是什么" \\
   --render-recipe
 ```
 
@@ -104,7 +121,7 @@ Goose 只会把 recipe 渲染成最终 YAML 输出,不发起任何 HTTP 请求�
 
 ### 装 GFEI MCP server (Karma recipe 必需)
 
-`gfei-karma.yaml` 已经内嵌了 MCP server 配置。其他 recipe 想用 GFEI 工具,把下面加到 `~/.config/goose/config.yaml`（Windows 是 `%APPDATA%\Block\goose\config\config.yaml`）:
+`gfei-karma.yaml` 已经内嵌了 MCP server 配置。其他 recipe 想用 GFEI 工具,把下面加到 `~/.config/goose/config.yaml`（Windows 是 `%APPDATA%\\Block\\goose\\config\\config.yaml`）:
 
 ```yaml
 extensions:
@@ -138,24 +155,24 @@ Goose 重启后,任何 agent 都能调用这 5 个 tools:
 ```powershell
 # 1. 装 rustup (如果没装)
 Invoke-WebRequest -Uri https://win.rustup.rs/x86_64 -OutFile rustup-init.exe
-.\rustup-init.exe -y
-$env:Path = "$env:USERPROFILE\.cargo\bin;$env:Path"
+.\\rustup-init.exe -y
+$env:Path = "$env:USERPROFILE\\.cargo\\bin;$env:Path"
 
 # 2. sparse-checkout Goose (避免 v8-goose 触发 GitHub 下载)
-git clone --depth 1 --filter=blob:none --sparse git@github.com:aaif-goose/goose.git D:\goose-src
-cd D:\goose-src
+git clone --depth 1 --filter=blob:none --sparse git@github.com:aaif-goose/goose.git D:\\goose-src
+cd D:\\goose-src
 git sparse-checkout set crates/* /*.toml /*.md /vendor/**
 
 # 3. 编译 (排除 v8-goose)
-cargo build -p goose-cli --bin goose --release \
-  --no-default-features \
+cargo build -p goose-cli --bin goose --release \\
+  --no-default-features \\
   --features code-mode,aws-providers,rustls-tls
 
 # 4. 验证
-D:\cargo-target\goose\release\goose.exe --version
+D:\\cargo-target\\goose\\release\\goose.exe --version
 ```
 
-完整 build log 见 `D:\goose-build.log` (37 分钟一次编译, 产出约 200MB)。
+完整 build log 见 `D:\\goose-build.log` (37 分钟一次编译, 产出约 200MB)。
 
 ---
 
@@ -220,8 +237,8 @@ golden-flower-ei/
 ### `POST /api/chat`
 
 ```bash
-curl -X POST http://localhost:3001/api/chat \
-  -H "Content-Type: application/json" \
+curl -X POST http://localhost:3001/api/chat \\
+  -H "Content-Type: application/json" \\
   -d '{
     "input": "意识是什么？",
     "history": [{"role":"user","content":"..."},{"role":"ei","content":"..."}],
@@ -340,3 +357,20 @@ id=10 OK: GFEI karma ledger ...
 共建: hello@goldenflower.ei
 
 > 道 场 初 立 · 等 你 同 行
+"""
+
+
+def main() -> int:
+    data = CONTENT.encode("utf-8")
+    P.write_bytes(data)
+    print(f"OK wrote {len(data)} bytes to {P}")
+    # verify
+    s = P.read_text(encoding="utf-8")
+    print("first 5 lines:")
+    for line in s.split("\n")[:5]:
+        print("  ", line)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

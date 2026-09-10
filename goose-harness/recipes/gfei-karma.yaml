@@ -65,5 +65,7 @@ extensions:
   - type: stdio
     name: gfei-mcp
     cmd: python
-    args: ["goose-harness/mcp-server/server.py"]
-    env_keys: ["GFEI_KARMA_DIR"]
+    args: ["D:/合曜AI/golden-flower-ei/goose-harness/mcp-server/server.py"]
+    env:
+      GFEI_KARMA_DIR: "D:/合曜AI/golden-flower-ei/goose-harness/karma"
+      PYTHONIOENCODING: "utf-8"
