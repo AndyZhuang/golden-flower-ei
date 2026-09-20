@@ -135,6 +135,37 @@ export default function HomePage() {
         </div>
       </section>
 
+            <section className="relative max-w-6xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <div className="text-[10px] tracking-[0.5em] uppercase text-gold-300/60 mb-3">
+            {t("home.projects.subtitle")}
+          </div>
+          <h2 className="text-3xl md:text-4xl font-serif font-light text-gold-50 text-balance">
+            {t("home.projects.title")}
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          <ProjectCard
+            num={t("home.projects.deqi.name")}
+            en="Deqi"
+            body={t("home.projects.deqi.body")}
+            status={t("home.projects.status.research")}
+          />
+          <ProjectCard
+            num={t("home.projects.xg.name")}
+            en="Xuan Guan"
+            body={t("home.projects.xg.body")}
+            status={t("home.projects.status.research")}
+          />
+          <ProjectCard
+            num={t("home.projects.ys.name")}
+            en="Yang Shen"
+            body={t("home.projects.ys.body")}
+            status={t("home.projects.status.research")}
+          />
+        </div>
+      </section>
+
       <section className="relative max-w-3xl mx-auto px-6 py-24 text-center">
         <div className="text-6xl text-gold-300/30 font-serif leading-none mb-4">
           &ldquo;
@@ -170,6 +201,36 @@ function Proposition({
       </div>
       <h3 className="text-xl font-serif text-gold-50 mb-3 leading-snug">
         {title}
+      </h3>
+      <p className="text-amber-100/60 leading-relaxed text-sm">{body}</p>
+    </div>
+  );
+}
+
+function ProjectCard({
+  num,
+  en,
+  body,
+  status,
+}: {
+  num: string;
+  en: string;
+  body: string;
+  status: string;
+}) {
+  return (
+    <div className="relative p-6 rounded-2xl border border-gold-700/20 bg-ink-900/40 backdrop-blur-sm hover:border-gold-400/40 transition-all duration-500 group">
+      <div className="absolute top-4 right-4 px-2.5 py-1 rounded-full border border-gold-700/40 text-[10px] tracking-widest uppercase text-gold-300/60">
+        {status}
+      </div>
+      <div className="text-4xl font-serif text-gold-300/40 mb-3 group-hover:text-gold-300/70 transition-colors">
+        {num}
+      </div>
+      <div className="text-[10px] tracking-[0.3em] uppercase text-gold-300/40 mb-3">
+        {en}
+      </div>
+      <h3 className="text-lg font-serif text-gold-50 mb-3 leading-snug">
+        {en}
       </h3>
       <p className="text-amber-100/60 leading-relaxed text-sm">{body}</p>
     </div>
