@@ -175,10 +175,10 @@ export const DICT = {
     "home.projects.deqi.name": "Deqi",
     "home.projects.deqi.body":
       "The engineering layer of Golden Flower EI. Practitioner persona + practice dialogue + multi-agent emergence script + Karma contribution system. Ask AI a real question, then see the reflection.",
-    "home.projects.xg.name": "Xuan Guan",
+    "home.projects.xg.name": "XuanGuan",
     "home.projects.xg.body":
       "An overall orchestration and control layer for multiple AI agents, models, and tools. The dispatch layer under EI: turning intent into executable multi-party collaboration, letting each intelligence find its place.",
-    "home.projects.ys.name": "Yang Shen",
+    "home.projects.ys.name": "YangShen",
     "home.projects.ys.body":
       "A large model with an inner moral layer. Not alignment as an outer rule, but value judgment and behavioral correspondence embedded deep in the model’s cognition — so it considers \"should this be done\" as it thinks.",
 "emergence.start": "▶ Start Watching",

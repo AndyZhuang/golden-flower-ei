@@ -153,13 +153,13 @@ export default function HomePage() {
           />
           <ProjectCard
             num={t("home.projects.xg.name")}
-            en="Xuan Guan"
+            en="XuanGuan"
             body={t("home.projects.xg.body")}
             status={t("home.projects.status.research")}
           />
           <ProjectCard
             num={t("home.projects.ys.name")}
-            en="Yang Shen"
+            en="YangShen"
             body={t("home.projects.ys.body")}
             status={t("home.projects.status.research")}
           />
