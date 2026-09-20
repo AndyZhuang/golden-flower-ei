@@ -87,7 +87,7 @@ export const DICT = {
     "home.projects.xg.name": "玄关",
     "home.projects.xg.body":
       "对多个 AI agent、模型、工具的总体编排与控制。位于 EI 之下的“调度层”——将意图转化为可执行的多方协作，让不同的智能各得其所。",
-    "home.projects.ys.name": "养神",
+    "home.projects.ys.name": "Y神",
     "home.projects.ys.body":
       "有内在道德层的大模型。不是对齐在外层规则之上，而是在模型的认知深处嵌入价值判断与行为对应——让它在思考时就考虑“这件事该不该做”。",
 "emergence.start": "▶ 开始观察",
