@@ -89,9 +89,22 @@ export default function HomePage() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <Proposition num="I" title={t("home.propositions.i.title")} body={t("home.propositions.i.body")} />
-          <Proposition num="II" title={t("home.propositions.ii.title")} body={t("home.propositions.ii.body")} />
-          <Proposition num="III" title={t("home.propositions.iii.title")} body={t("home.propositions.iii.body")} />
+          <ProjectCard
+            symbol={t("home.projects.deqi.name")}
+            en="Deqi"
+            body={t("home.projects.deqi.body")}
+            status={t("home.projects.status.research")}
+          />
+          <ProjectCard
+            symbol="XG"
+            body={t("home.projects.xg.body")}
+            status={t("home.projects.status.research")}
+          />
+          <ProjectCard
+            symbol="YS"
+            body={t("home.projects.ys.body")}
+            status={t("home.projects.status.research")}
+          />
         </div>
       </section>
 
@@ -146,20 +159,18 @@ export default function HomePage() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           <ProjectCard
-            num={t("home.projects.deqi.name")}
+            symbol="Deqi"
             en="Deqi"
             body={t("home.projects.deqi.body")}
             status={t("home.projects.status.research")}
           />
           <ProjectCard
-            num={t("home.projects.xg.name")}
-            en="XuanGuan"
+            symbol="XG"
             body={t("home.projects.xg.body")}
             status={t("home.projects.status.research")}
           />
           <ProjectCard
-            num={t("home.projects.ys.name")}
-            en="YangShen"
+            symbol="YS"
             body={t("home.projects.ys.body")}
             status={t("home.projects.status.research")}
           />
@@ -208,13 +219,13 @@ function Proposition({
 }
 
 function ProjectCard({
-  num,
+  symbol,
   en,
   body,
   status,
 }: {
-  num: string;
-  en: string;
+  symbol: string;
+  en?: string;
   body: string;
   status: string;
 }) {
@@ -224,14 +235,13 @@ function ProjectCard({
         {status}
       </div>
       <div className="text-4xl font-serif text-gold-300/40 mb-3 group-hover:text-gold-300/70 transition-colors">
-        {num}
+        {symbol}
       </div>
-      <div className="text-[10px] tracking-[0.3em] uppercase text-gold-300/40 mb-3">
-        {en}
-      </div>
-      <h3 className="text-lg font-serif text-gold-50 mb-3 leading-snug">
-        {en}
-      </h3>
+      {en && (
+        <div className="text-[10px] tracking-[0.3em] uppercase text-gold-300/40 mb-3">
+          {en}
+        </div>
+      )}
       <p className="text-amber-100/60 leading-relaxed text-sm">{body}</p>
     </div>
   );

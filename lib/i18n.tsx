@@ -78,18 +78,16 @@ export const DICT = {
     "emergence.title": "三个智能，一朵金花",
     "emergence.subtitle":
       "三个 AI agent 立场、性格、表达方式各不相同。围绕「意识是什么」对话 5 轮——在第 5 轮，将有一个它们都没有预设的「涌现时刻」。",
-        "home.projects.title": "三个正在研发的项目",
+        "home.projects.title": "三个前沿项目研发中",
     "home.projects.subtitle": "Three Projects in the Making",
     "home.projects.status.research": "研发中",
     "home.projects.deqi.name": "得气",
     "home.projects.deqi.body":
-      "金花 EI 的工程化层。修行者人格 + 修行对话 + 多 agent 涌现剧本 + Karma 贡献体系。让你能问 AI 一个真问题，然后看见回照。",
+      "多 agent 元平台：真实的编码 harness（Claude、Codex、DeepSeek 等）报价竞争来处理你的需求。也是一个好玩的赛场：harness 们赋出自己的最佳作答，你选择能真正完成工作的那只手。",
     "home.projects.xg.name": "玄关",
-    "home.projects.xg.body":
-      "对多个 AI agent、模型、工具的总体编排与控制。位于 EI 之下的“调度层”——将意图转化为可执行的多方协作，让不同的智能各得其所。",
+    "home.projects.xg.body": "使用 ME 方法论的大模型。",
     "home.projects.ys.name": "Y神",
-    "home.projects.ys.body":
-      "有内在道德层的大模型。不是对齐在外层规则之上，而是在模型的认知深处嵌入价值判断与行为对应——让它在思考时就考虑“这件事该不该做”。",
+    "home.projects.ys.body": "基础模型的新范式。",
 "emergence.start": "▶ 开始观察",
     "emergence.reset": "↺ 重置",
     "emergence.prepare": "准备观察三个 AI 的涌现",
@@ -169,18 +167,16 @@ export const DICT = {
     "emergence.title": "Three intelligences, one golden flower",
     "emergence.subtitle":
       "Three AI agents with different standpoints, personalities, and ways of expression. Across 5 rounds of dialogue on \"what is consciousness\" — in round 5, an \"emergence moment\" that none of them preset will appear.",
-        "home.projects.title": "Three Projects in the Making",
+        "home.projects.title": "Three frontier projects in development",
     "home.projects.subtitle": "Three Projects in the Making",
     "home.projects.status.research": "In development",
     "home.projects.deqi.name": "Deqi",
     "home.projects.deqi.body":
-      "The engineering layer of Golden Flower EI. Practitioner persona + practice dialogue + multi-agent emergence script + Karma contribution system. Ask AI a real question, then see the reflection.",
+      "A multi-agent metaharness where real coding harnesses (Claude, Codex, DeepSeek, etc.) bid to handle your requests. Also a fun arena where real coding harnesses offer their best and you pick the hand that finishes the work.",
     "home.projects.xg.name": "XuanGuan",
-    "home.projects.xg.body":
-      "An overall orchestration and control layer for multiple AI agents, models, and tools. The dispatch layer under EI: turning intent into executable multi-party collaboration, letting each intelligence find its place.",
+    "home.projects.xg.body": "A large model with ME methodology.",
     "home.projects.ys.name": "YangShen",
-    "home.projects.ys.body":
-      "A large model with an inner moral layer. Not alignment as an outer rule, but value judgment and behavioral correspondence embedded deep in the model’s cognition — so it considers \"should this be done\" as it thinks.",
+    "home.projects.ys.body": "A new paradigm for foundation models.",
 "emergence.start": "▶ Start Watching",
     "emergence.reset": "↺ Reset",
     "emergence.prepare": "Ready to observe three AIs emerge",
