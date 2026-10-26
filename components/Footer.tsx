@@ -64,16 +64,6 @@ export function Footer() {
             <ul className="space-y-2 text-amber-100/50 text-xs">
               <li>
                 <a
-                  href="https://github.com/AndyZhuang/golden-flower-ei"
-                  className="hover:text-gold-200 transition-colors"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a
                   href="mailto:hello@goldenflower.ei"
                   className="hover:text-gold-200 transition-colors"
                 >

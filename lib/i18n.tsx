@@ -83,7 +83,7 @@ export const DICT = {
     "home.projects.status.research": "研发中",
     "home.projects.deqi.name": "得气",
     "home.projects.deqi.body":
-      "多 agent 元平台：真实的编码 harness（Claude、Codex、DeepSeek 等）报价竞争来处理你的需求。也是一个好玩的赛场：harness 们赋出自己的最佳作答，你选择能真正完成工作的那只手。",
+      "大模型道德评估层框架——为大模型提供标准、量表与可验证的依据，用以判断一个智能是否与人类的富贵相向。",
     "home.projects.xg.name": "玄关",
     "home.projects.xg.body": "使用 ME 方法论的大模型。",
     "home.projects.ys.name": "Y神",
@@ -172,7 +172,7 @@ export const DICT = {
     "home.projects.status.research": "In development",
     "home.projects.deqi.name": "Deqi",
     "home.projects.deqi.body":
-      "A multi-agent metaharness where real coding harnesses (Claude, Codex, DeepSeek, etc.) bid to handle your requests. Also a fun arena where real coding harnesses offer their best and you pick the hand that finishes the work.",
+      "A moral evaluation layer framework for large models — standards, rubrics, and verifiable grounds for judging the character of the intelligence behind the output.",
     "home.projects.xg.name": "XuanGuan",
     "home.projects.xg.body": "A large model with ME methodology.",
     "home.projects.ys.name": "YangShen",
