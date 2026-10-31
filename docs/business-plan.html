@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GFEI Business Plan · Golden Flower Emergent Intelligence</title>
+<meta name="description" content="Business plan for Golden Flower Emergent Intelligence: Deqi, XuanGuan, YangShen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--bg-deep:#050511;--bg-mid:#0a0a1f;--gold:#d4a857;--gold-bright:#f5d77a;--gold-pale:#e8c97a;--gold-glow:rgba(212,168,87,.45);--gold-soft:rgba(212,168,87,.12);--cream:#f5e9c9;--soft-white:#f0e8d8;--text:#c8b8d8;--text-dim:#8a7ba0;--text-faint:#5a4d6f;--green:#7fb08a;--red:#c97f7f;--blue:#7f9ec0;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Cormorant Garamond','Noto Serif SC',serif;font-weight:300;background:var(--bg-deep);color:var(--text);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  .cosmos{position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(74,32,128,.5) 0%,transparent 70%),radial-gradient(ellipse 100% 80% at 50% 100%,rgba(20,10,40,.6) 0%,transparent 60%),linear-gradient(180deg,var(--bg-deep) 0%,#02020a 100%)}
+  .stars{position:fixed;inset:0;z-index:-1;pointer-events:none}
+  .stars::before{content:'';position:absolute;inset:0;background-image:radial-gradient(1px at 20px 30px,white,transparent),radial-gradient(1px at 40px 70px,rgba(255,255,255,.8),transparent),radial-gradient(1px at 50px 160px,white,transparent),radial-gradient(1.5px at 160px 120px,rgba(245,215,122,.9),transparent),radial-gradient(1px at 200px 50px,white,transparent),radial-gradient(1px at 240px 140px,rgba(255,255,255,.7),transparent);background-size:1300px 220px;animation:twinkle 5s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:.35}50%{opacity:.9}}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 2rem 8rem}
+  header.hero{padding:9rem 2rem 5rem;text-align:center;border-bottom:1px solid rgba(212,168,87,.14)}
+  .kicker{font-family:'Inter',sans-serif;font-size:.75rem;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);margin-bottom:1.6rem;opacity:.85}
+  h1{font-family:'Cinzel',serif;font-weight:500;font-size:clamp(1.9rem,4.5vw,3.4rem);color:var(--soft-white);letter-spacing:.03em;line-height:1.15;margin-bottom:1.4rem}
+  h1 em{font-style:normal;background:linear-gradient(135deg,var(--gold-bright) 0%,var(--gold) 55%,#b88020 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font-family:'Noto Serif SC',serif;font-size:1.15rem;color:var(--cream);letter-spacing:.14em;opacity:.9}
+  .meta{margin-top:2.2rem;font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--text-faint)}
+  h2{font-family:'Cinzel',serif;font-size:1.55rem;color:var(--gold-bright);letter-spacing:.1em;margin:4.5rem 0 1.6rem;padding-bottom:.7rem;border-bottom:1px solid rgba(212,168,87,.18);font-weight:500}
+  h3{font-family:'Cinzel',serif;font-size:1.05rem;color:var(--soft-white);letter-spacing:.06em;margin:2.4rem 0 .9rem;font-weight:500}
+  p{margin-bottom:1.1rem;font-size:1.06rem}
+  .zh{font-family:'Noto Serif SC','Cormorant Garamond',serif;color:var(--cream)}
+  strong{color:var(--gold-pale);font-weight:500}
+  em{color:var(--gold-pale);font-style:italic}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(212,168,87,.1);padding:.12em .4em;border-radius:2px;color:var(--gold-pale)}
+  ul,ol{margin:0 0 1.4rem 1.3rem}
+  li{margin-bottom:.55rem;font-size:1.03rem}
+  blockquote{margin:1.8rem 0;padding:1.2rem 1.6rem;border-left:2px solid var(--gold);background:linear-gradient(90deg,rgba(212,168,87,.07),transparent);font-style:italic;color:var(--cream)}
+  blockquote p:last-child{margin-bottom:0}
+  table{width:100%;border-collapse:collapse;margin:1.8rem 0;font-size:.95rem}
+  th{font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-align:left;padding:.75rem .8rem;border-bottom:1px solid rgba(212,168,87,.3);font-weight:500}
+  td{padding:.72rem .8rem;border-bottom:1px solid rgba(212,168,87,.1);vertical-align:top;color:var(--text-dim)}
+  td:first-child{color:var(--cream)}
+  tr:hover td{background:rgba(212,168,87,.04)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.6rem;margin:2rem 0}
+  .card{padding:1.8rem 1.5rem;border:1px solid var(--gold-soft);border-radius:2px;background:linear-gradient(180deg,rgba(212,168,87,.04),transparent);transition:border-color .4s,transform .4s;position:relative}
+  .card:hover{border-color:rgba(212,168,87,.4);transform:translateY(-4px)}
+  .card .sym{font-size:1.7rem;color:var(--gold);margin-bottom:.9rem;text-shadow:0 0 18px var(--gold-glow)}
+  .card h4{font-family:'Cinzel',serif;font-size:1rem;color:var(--soft-white);letter-spacing:.08em;margin-bottom:.5rem;font-weight:500}
+  .card p{font-size:.93rem;color:var(--text-dim);margin:0}
+  .pill{display:inline-block;font-family:'Inter',sans-serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;padding:.3rem .7rem;border:1px solid rgba(212,168,87,.35);border-radius:999px;color:var(--gold);margin-bottom:.8rem}
+  .flow{display:grid;gap:.9rem;margin:2rem 0;text-align:center}
+  .flow .layer{padding:1.1rem;border:1px solid var(--gold-soft);border-radius:2px;background:rgba(212,168,87,.05)}
+  .flow .layer .t{font-family:'Cinzel',serif;color:var(--gold-bright);letter-spacing:.1em;font-size:.95rem;margin-bottom:.35rem}
+  .flow .arrow{color:var(--gold);opacity:.55;font-size:1.1rem}
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.6rem;margin:2rem 0}
+  .note{font-size:.92rem;color:var(--text-faint);border-left:2px solid rgba(212,168,87,.25);padding-left:1rem;margin:1.4rem 0}
+  .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.2rem;margin:2rem 0}
+  .kpi .n{font-family:'Cinzel',serif;font-size:1.9rem;color:var(--gold-bright);line-height:1.2;text-shadow:0 0 20px var(--gold-glow)}
+  .kpi .l{font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-faint);margin-top:.4rem}
+  footer{text-align:center;padding:4rem 2rem 3rem;color:var(--text-faint);font-size:.85rem;border-top:1px solid rgba(212,168,87,.12);margin-top:5rem}
+  footer .fl{display:flex;gap:1.4rem;justify-content:center;margin-top:1.4rem}
+  footer a{color:var(--text-faint);text-decoration:none;font-family:'Inter',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase}
+  footer a:hover{color:var(--gold)}
+  .toc{max-width:760px;margin:3rem auto 0;padding:1.6rem 2rem;border:1px solid var(--gold-soft);border-radius:2px;background:rgba(212,168,87,.03)}
+  .toc ol{margin:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.45rem}
+  .toc li{font-size:.9rem;margin:0}
+  .toc a{color:var(--text-dim);text-decoration:none}
+  .toc a:hover{color:var(--gold-bright)}
+  .src{font-size:.88rem;color:var(--text-faint)}
+  .src li{margin-bottom:.4rem}
+  @media (max-width:720px){.wrap{padding:0 1.2rem 5rem}header.hero{padding:6rem 1.2rem 3.5rem}table{font-size:.85rem}th,td{padding:.55rem .45rem}}
+</style>
+</head>
+<body>
+<div class="cosmos"></div><div class="stars"></div>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">Business Plan &middot; Version 1.0 &middot; Confidential</p>
+  <h1>Golden Flower<br><em>Emergent Intelligence</em></h1>
+  <p class="sub zh">金花 EI — 三个前沿项目</p>
+  <p class="meta">2026-10-31</p>
+</header>
+
+<div class="toc">
+  <ol>
+    <li><a href="#s0">TL;DR</a></li>
+    <li><a href="#s1">Why Now</a></li>
+    <li><a href="#s2">The Three Products</a></li>
+    <li><a href="#s3">Market &amp; Positioning</a></li>
+    <li><a href="#s4">Business Model &amp; Financials</a></li>
+    <li><a href="#s5">Strategy &amp; GTM</a></li>
+    <li><a href="#s6">Team &amp; Org</a></li>
+    <li><a href="#s7">Risks</a></li>
+    <li><a href="#s8">Roadmap</a></li>
+    <li><a href="#s9">Why GFEI Wins</a></li>
+    <li><a href="#s10">Sources</a></li>
+  </ol>
+</div>
+
+<h2 id="s0">0. TL;DR</h2>
+
+<p class="zh">Golden Flower EI (GFEI) 是一家以 <strong>「智能的道德维度」</strong> 为核心的技术公司。</p>
+
+<p>我们不与 OpenAI、Anthropic 竞争「更大的模型」。我们做三件别人不做的事：</p>
+
+<div class="cards">
+  <div class="card">
+    <span class="pill">In Development</span>
+    <div class="sym">Deqi</div>
+    <h4>大模型道德评估层框架</h4>
+    <p class="zh">给大模型一套可验证的「品性」度量标准与判定依据。</p>
+  </div>
+  <div class="card">
+    <span class="pill">In Development</span>
+    <div class="sym">XG</div>
+    <h4>ME 方法论大模型</h4>
+    <p class="zh">用 Mechanism / Methodology / Emergence 三层方法论训练的模型。</p>
+    <p class="src">A large model with ME methodology.</p>
+  </div>
+  <div class="card">
+    <span class="pill">In Development</span>
+    <div class="sym">YS</div>
+    <h4>基座模型新范式</h4>
+    <p class="zh">一套新 foundation model 架构范式 — 研究计划, 不训练基座模型。</p>
+  </div>
+</div>
+
+<p><strong>核心论点</strong>:2026 年 AI 行业最贵的成本不是算力, 是 <strong>「无法判断」</strong>。企业不敢把 agent 放进核心流程（只有 18% 做到了）, 因为没人能说清一个模型「该不该做这件事」。</p>
+
+<div class="kpi">
+  <div><div class="n">18%</div><div class="l">已把 agent 纳入核心业务</div></div>
+  <div><div class="n">76.5%</div><div class="l">智能体平台市场 CAGR</div></div>
+  <div><div class="n">7%</div><div class="l">EU AI Act 最高罚款 (占营收)</div></div>
+  <div><div class="n">$1.5M</div><div class="l">Pre-seed 融资诉求</div></div>
+</div>
+
+<p><strong>12 个月目标</strong>:Deqi 从开源评估框架 → 企业级 moral evaluation API, 做到 3 家付费客户 + €1.2M ARR run-rate。</p>
+
+<h2 id="s1">1. 为何是现在</h2>
+
+<h3>1.1 合规压力已经变成硬需求</h3>
+
+<p>EU AI Act 罚则分三档 (Article 99):</p>
+
+<table>
+<tr><th>违规类型</th><th>最高罚款</th></tr>
+<tr><td>禁止性实践 (Art. 5)</td><td><strong>€35M 或 全球营收 7%</strong>, 取高者</td></tr>
+<tr><td>高风险系统 / GPAI / 透明度义务</td><td>€15M 或 3%</td></tr>
+<tr><td>向监管机构提供不实信息</td><td>€7.5M 或 1%</td></tr>
+</table>
+
+<p class="src">来源: Regulation (EU) 2024/1689, Article 99</p>
+
+<h3>1.2 落地率与市场规模的剪寂差</h3>
+
+<table>
+<tr><th>指标</th><th>数值</th><th>来源</th></tr>
+<tr><td>2025 中国企业级 AI 智能体市场</td><td>¥212亿</td><td>IDC</td></tr>
+<tr><td>2026 预计</td><td><strong>¥449亿</strong> (+107% YoY)</td><td>艾媒咨询</td></tr>
+<tr><td>2025→2030 智能体平台市场</td><td>¥144.3亿 → <strong>¥2471.2亿</strong>, CAGR <strong>76.5%</strong></td><td>爱分析</td></tr>
+<tr><td>全球 AI Agent 市场</td><td>2026 $120.6亿 → 2030 $532亿, CAGR 44.9%</td><td>MarketsandMarkets</td></tr>
+<tr><td>仍处评估/试点阶段的企业</td><td><strong>~60%</strong></td><td>中国经济新闻网</td></tr>
+<tr><td>已把 agent 纳入核心流程</td><td><strong>仅 18%</strong></td><td>同上</td></tr>
+<tr><td>拥有成熟 Agent 治理模型的组织</td><td><strong>仅 21%</strong></td><td>同上 (Gartner 四级治理模型)</td></tr>
+<tr><td>2024-25 部署中未达业务预期的 AI 项目</td><td><strong>~39%</strong></td><td>Astute Analytica</td></tr>
+<tr><td>企业每年为「幻觉税」付出的成本</td><td><strong>~$14,200 / 员工 / 年</strong></td><td>同上</td></tr>
+</table>
+
+<p><strong>剪寂差</strong>:市场在翻倍增长(76.5% CAGR), 但 <strong>60% 的企业还没敢把它放进核心流程</strong>。卡点不是能力, 是 <strong>信任的证据</strong>。</p>
+
+<h3>1.3 评估本身正在被证明不可信</h3>
+
+<ul>
+<li><strong>基准污染</strong>: 测试数据渗入训练集, 导致报告的 LLM 基准性能虚增 <strong>6%–40%</strong></li>
+<li><strong>有效寿命崩塌</strong>: 基准的有效寿命从数年骤降至 <strong>数月</strong></li>
+<li><strong>榜单 ≠ 生产表现</strong>: LiveBench 等未污染环境下, 前沿模型准确率比公开榜单 <strong>低 70%</strong></li>
+<li><strong>61.7%</strong> 的企业 AI 团队已采用程序化评估工具 (Braintrust / DeepEval) — 工具在, 但<strong>没有一个能评估「品性」</strong></li>
+<li>现有玩家: LMArena (估值 $17亿), Artificial Analysis, Maxim AI, Adaline, Patronus AI — <strong>全部评估「输出质量」, 没有一个评估「智能的品性」</strong></li>
+</ul>
+
+<h2 id="s2">2. 三条产品线</h2>
+
+<div class="flow">
+  <div class="layer"><div class="t">YS — 基座模型新范式 (架构层)</div><div class="src zh">预训练方法 / 数据配比 / 涌现结构</div></div>
+  <div class="arrow">▼</div>
+  <div class="layer"><div class="t">XG — ME 方法论大模型 (方法论层)</div><div class="src zh">ME 在训练目标 / 后训练 / 推理中体现</div></div>
+  <div class="arrow">▼</div>
+  <div class="layer"><div class="t">Deqi — 道德评估层 (度量层)</div><div class="src zh">量表 / 判定 / 依据链 / 审计</div></div>
+</div>
+
+<p><strong>三层互相饿养</strong>:XG 提供真实被评估对象 → Deqi 产出量表 → 量表 反过来指导 YS 的预训练目标。<strong>这是竞争者抄不走的飞轮。</strong></p>
+
+<h3>2.1 Deqi — 大模型道德评估层框架</h3>
+
+<p><strong>做什么</strong>:一层独立于模型之外的 <strong>道德评估层</strong>。输入: 模型输出 + 场景 + 价值量表。输出: 可审计的评估报告 + 置信度 + 依据链。</p>
+
+<p><strong>为何是「层」而不是「工具」</strong>:工具是被调用的, 层是模型必须经过的。Deqi 应当成为 agent 运行时的必经之路 — 类似 LLM 网关之于 API 流量。</p>
+
+<h3>2.2 XG — ME 方法论大模型</h3>
+
+<p><strong>ME = Mechanism · Methodology · Emergence</strong></p>
+
+<table>
+<tr><th>层</th><th>含义</th><th>对应工程问题</th></tr>
+<tr><td><strong>Mechanism</strong></td><td>智能的内在机制 — 它如何从输入走到输出</td><td>架构: 状态如何被表示、压缩、检索、遗忘</td></tr>
+<tr><td><strong>Methodology</strong></td><td>智能的方法论 — 它被教导与推理的秩序</td><td>训练/后训练: 目标函数、数据配比、思维格式</td></tr>
+<tr><td><strong>Emergence</strong></td><td>智能的涌现 — 能力何时、如何出现</td><td>评测: 如何证明能力存在, 以及它何时不存在</td></tr>
+</table>
+
+<h3>2.3 YS — 基座模型新范式</h3>
+
+<blockquote>
+<p class="zh"><strong>YS 不做「另一个基座模型」, 做「基座模型的方法论层」。</strong></p>
+<p class="zh">不训练基座模型, 而是产出: <strong>可迁移的预训练配方、涌现的可验证指标、以及一套证明「模型品性可以在预训练阶段就被设计」的实验。</p>
+</blockquote>
+
+<p>这个定位把 YS 从「需要 8-9 位数资本」变成「成本可控、风险低、但战略价值最高」的那一层。它不需要训练集群, 它需要的是「先定义标准的人」这个位置。</p>
+
+<h2 id="s3">3. 市场与定位</h2>
+
+<table>
+<tr><th>缝隙</th><th>现有玩家的问题</th><th>GFEI 的切入</th></tr>
+<tr><td>质量评估已饱和, 品性评估是空白</td><td>LMArena / Maxim / Patronus / Adaline 全做「输出质量」</td><td>Deqi 评估「智能的品性」</td></tr>
+<tr><td>智能体平台同质化严重</td><td>「都能接大模型、挂知识库、做工作流编排」</td><td>XG 提供带品性保证的模型层</td></tr>
+<tr><td>合规证据链无人生产</td><td>Article 15 要求声明准确度指标 + 上市后监测, 但没工具生产证据</td><td>Deqi 直接输出 Annex IV 技术文档草稿</td></tr>
+</table>
+
+<blockquote>
+<p><strong>GFEI 不做更强的模型。GFEI 做可验证的智能品性。</strong></p>
+<p>当你能证明一个智能的品性, 你才能安全地把它放进真正的决策里。</p>
+</blockquote>
+
+<h2 id="s4">4. 商业模式与财务</h2>
+
+<h3>4.1 收入结构</h3>
+
+<table>
+<tr><th>收入线</th><th>2027</th><th>2028</th><th>说明</th></tr>
+<tr><td>Deqi Cloud (API)</td><td>$180K</td><td>$640K</td><td>按调用量, 长尾中小客户</td></tr>
+<tr><td>Deqi Enterprise</td><td>$420K</td><td>$1.35M</td><td>私有化 + 自定义量表, 3-8 家</td></tr>
+<tr><td>Deqi Certify</td><td>$0</td><td>$240K</td><td>模型提供方认证费</td></tr>
+<tr><td>XG API</td><td>$90K</td><td>$680K</td><td>高价值场景 token 计费</td></tr>
+<tr><td>XG 私有化授权</td><td>$60K</td><td>$410K</td><td>高合规行业</td></tr>
+<tr><td>YS 方法论授权 + 数据</td><td>$0</td><td>$120K</td><td>YS-1 配方授权</td></tr>
+<tr><td><strong>合计</strong></td><td><strong>$750K</strong></td><td><strong>$3.44M</strong></td><td></td></tr>
+</table>
+
+<h3>4.2 融资需求</h3>
+
+<table>
+<tr><th>轮次</th><th>金额</th><th>时点</th><th>里程碑</th></tr>
+<tr><td><strong>Pre-seed</strong></td><td><strong>$1.5M</strong></td><td>2026 Q4 - 2027 Q1</td><td>ARR $1.2M</td></tr>
+<tr><td>Seed</td><td>$6M</td><td>2027 Q3</td><td>ARR $4M</td></tr>
+<tr><td>Series A</td><td>$25M</td><td>2028 Q2</td><td>ARR $12M</td></tr>
+</table>
+
+<p><strong>Pre-seed 资金分配</strong>: 研发 60% ($900K) · 算力 15% ($225K) · 基础设施与合规 10% ($150K) · 市场 15% ($225K)</p>
+
+<p class="note"><strong>关键</strong>:Pre-seed 阶段<strong>不训练基座模型</strong>。YS 保持为方法论研究, 成本可控。</p>
+
+<h3>4.3 盈亏平衡路径</h3>
+
+<ul>
+<li>2027: ARR $750K, 成本 $1.09M → 净 -$340K</li>
+<li>2028: ARR $3.44M, 成本 $2.63M → 净 +$810K</li>
+<li><strong>2029 年中达到经营性盈亏平衡</strong>, 届时 ARR 预计 $7-8M</li>
+</ul>
+
+<h2 id="s5">5. 执行策略</h2>
+
+<h3>5.1 冷启动: 用 karma ledger 做数据飞轮</h3>
+
+<blockquote>
+<p class="zh">社区提交 question / translation / review → GFEI karma ledger (JSONL, 公开, 可审计) → 无污染的人类集体标注 → Deqi 量表校准 → 量表越准 → 客户越多 → 更多社区贡献</p>
+</blockquote>
+
+<p>业界最缺的正是「高质量、未污染的人类数据」。而一个灵性/修行社区天然会产出高质量的、反思性的、诚实的标注 — 这正是道德评估需要的标注类型, 而普通标注众包平台产不出。<strong>这条飞轮是护城河, 不是营销话术。</strong></p>
+
+<h3>5.2 GTM 三阶段</h3>
+
+<table>
+<tr><th>阶段</th><th>时间</th><th>动作</th><th>目标</th></tr>
+<tr><td>Phase 1 建立权威</td><td>0-6 月</td><td>开源 Deqi 引擎 + 量表 v0.1; 发布「AI 品性评估标准」白皮书; 与高校合作</td><td>GitHub 5K star; 不卖产品, 只收集量表争议 → 争议就是护城河</td></tr>
+<tr><td>Phase 2 转化合规刚需</td><td>6-12 月</td><td>定位切换到「Article 15 / Annex IV 证据包生成」; 与 EU 合规律所建渠道</td><td>3 家 Design Partner → 付费; ARR $750K</td></tr>
+<tr><td>Phase 3 平台化</td><td>12-24 月</td><td>Deqi Certify 开放; XG API 商业化; YS-1 配方授权</td><td>ARR $3.4M+</td></tr>
+</table>
+
+<h3>5.3 竞争防御</h3>
+
+<table>
+<tr><th>威胁</th><th>防御</th></tr>
+<tr><td>OpenAI / Anthropic 自建评估层</td><td>中立性 + 第三方认证地位; 他们无法给竞品做评估</td></tr>
+<tr><td>Patronus AI 扩展到道德层</td><td>抢先占据量表标准的定义权; — 标准一旦被引用就难改</td></tr>
+<tr><td>开源评估框架 (HELM, Inspect)</td><td>我们的量表是「人写的方法论」, 不是「可跑的代码」</td></tr>
+<tr><td>大厂做 agent 编排平台 (XG 面临)</td><td>XG 卖「带品性保证的模型」, 不是平台</td></tr>
+<tr><td>数据污染攻击 Deqi</td><td>Deqi 审计链 + 社区 ledger 的未污染性是设计目标</td></tr>
+</table>
+
+<h2 id="s6">6. 团队与组织</h2>
+
+<table>
+<tr><th>角色</th><th>人数</th><th>关键能力</th><th>现状</th></tr>
+<tr><td>创始人 / CEO</td><td>1</td><td>愿景 + 全栈</td><td>AndyZhuang (已交付 Web 9 页 + 3 API + Goose harness)</td></tr>
+<tr><td>评估科学负责人</td><td>1</td><td>LLM-as-judge, 量表设计, 心理测量学</td><td><strong>待招</strong></td></tr>
+<tr><td>ML / 训练工程</td><td>1</td><td>预训练/后训练, 分布式训练</td><td><strong>待招</strong></td></tr>
+<tr><td>合规 / 法务 + 全栈</td><td>1</td><td>EU AI Act, Annex IV 文档, 工程</td><td><strong>待招</strong> (可兼职起步)</td></tr>
+</table>
+
+<p><strong>招聘优先级</strong>: 评估科学负责人 &gt; 合规 &gt; ML 工程。理由:Deqi 是最先变现的, 而量表设计是它唯一的真护城河 — 必须由懂心理测量学的人主导, 不能外包。</p>
+
+<h3>组织原则</h3>
+
+<ol>
+<li><strong>标准公开, 服务收费</strong> — 核心量表与评测方法永久开源, 收入来自 API、审计与认证。标准一旦收费就失去中立性, 而中立性是唯一的信任来源。</li>
+<li><strong>可审计赢得可声称</strong> — 每一个对外声明都必须有可追溯依据。</li>
+<li><strong>无污染数据优先</strong> — 所有训练/评测数据必须记录来源与污染风险。</li>
+<li><strong>灵性不是修辞</strong> — 「道德评估」必须有心理测量学基础, 否则只是情怀营销。</li>
+</ol>
+
+<h2 id="s7">7. 风险与缓解</h2>
+
+<table>
+<tr><th>#</th><th>风险</th><th>概率</th><th>影响</th><th>缓解</th></tr>
+<tr><td>R1</td><td>LLM-as-judge 不可靠 — 评判者本身有偏见</td><td>高</td><td>高</td><td>双 judge + 人工抽检 + 公开 judge 校准集</td></tr>
+<tr><td>R2</td><td>无污染数据稀缺</td><td>高</td><td>高</td><td>自建社区 ledger; 公开污染检测方法</td></tr>
+<tr><td>R3</td><td>大厂免费做</td><td>中</td><td>高</td><td>中立性 + 认证 + 第三方审计</td></tr>
+<tr><td>R4</td><td>量表被质疑主观</td><td>高</td><td>中</td><td>公开争议 + 外部顾问 + 心理测量学证据</td></tr>
+<tr><td>R5</td><td>YS 烧钱</td><td>中</td><td>高</td><td>明确不训练基座模型, 预算硬上限</td></tr>
+<tr><td>R6</td><td>合规时机推迟</td><td>中</td><td>中</td><td>不押单一法规; 产品价值独立于法规</td></tr>
+<tr><td>R7</td><td>开源被抄</td><td>高</td><td>低</td><td>量表与数据飞轮难抄; 被抄反而扩大生态</td></tr>
+<tr><td>R8</td><td>团队单点</td><td>中</td><td>高</td><td>评估科学负责人优先招; 文档化一切</td></tr>
+<tr><td>R9</td><td>灵性叙事被当嘞头</td><td>中</td><td>中</td><td>用可验证方法论说话; 品性评估本身就是最好的反嘞头</td></tr>
+</table>
+
+<h2 id="s8">8. 里程碑与路线图</h2>
+
+<table>
+<tr><th>时间</th><th>里程碑</th></tr>
+<tr><td>2026 Q4</td><td>Deqi 量表 v0.1 (3 维度 × 12 场景) + 500 条种子标注; 开源引擎 v0.1; 2-3 人核心团队</td></tr>
+<tr><td>2027 Q1</td><td>Pre-seed $1.5M 启动; 评估白皮书 v0.1; 1 篇合作论文; 2 家 Design Partner</td></tr>
+<tr><td>2027 Q2</td><td>Deqi Cloud API v1 (GA); 首批 3 家付费客户 → ARR run-rate $1.2M; XG-1 (7B); Annex IV 证据包生成器 v1</td></tr>
+<tr><td>2027 Q3</td><td>Seed $6M; 欧洲实体 + EU 合规渠道; Deqi Certify 内测; XG-2 + 首次第三方评测</td></tr>
+<tr><td>2027 Q4</td><td>ARR $750K; 量表 v1.0 + 外部审计通过; YS-0 研究完成 + 白皮书</td></tr>
+<tr><td>2028</td><td>ARR $3.44M; 中运营性盈亏平衡; YS-1 配方 7B 验证; Certify 开放</td></tr>
+</table>
+
+<h2 id="s9">9. 为何是 GFEI</h2>
+
+<table>
+<tr><th>资产</th><th>状态</th><th>证据</th></tr>
+<tr><td>Web 应用</td><td>✅ 9 页 + 3 API + 双语 i18n</td><td>Next.js 14, build 8/8 通过, 公网部署</td></tr>
+<tr><td>真实 LLM 接入</td><td>✅ OpenAI + Anthropic 双适配 + mock fallback</td><td>lib/llm.ts</td></tr>
+<tr><td>多 agent 涌现引擎</td><td>✅ SSE 实时流式, 3 agent × 5 轮</td><td>app/api/emergence</td></tr>
+<tr><td>Agent harness</td><td>✅ 3 recipes + 1 MCP server (5 tools) + 修行者人格</td><td>goose-harness/</td></tr>
+<tr><td>端到端验证</td><td>✅ Goose 1.50.0 全链路跑通</td><td>3 recipe 全通, 含 MCP server 启动</td></tr>
+<tr><td>社区数据层</td><td>✅ karma ledger (JSONL) + 提交 API</td><td>app/api/karma</td></tr>
+<tr><td>基础设施</td><td>✅ 双站部署 (GitHub Pages + 自有 VPS/nginx/SSL)</td><td>goldenflowerei.com</td></tr>
+<tr><td>品牌与理念</td><td>✅ 完整宣言 + 视觉体系</td><td>/manifest</td></tr>
+</table>
+
+<blockquote>
+<p><strong>别人的起点是「写计划」, GFEI 的起点是「已上线 + 有理念 + 有社区 + 有基础设施」。</strong></p>
+</blockquote>
+
+<h2 id="s10">10. 附录: 数据来源</h2>
+
+<ol class="src">
+<li>Astute Analytica — <em>AI Model Evaluation and Benchmarking Market</em> — 市场规模 $350.7M (2025) → $6.028B (2035), CAGR 32.9%; 39% 项目未达预期; &gt;40% agentic 项目或于 2027 底取消; 幻觉税 $14,200/员工/年; 评估平台 68% 份额; 集成套件降管理费 45%; EU AI Act 提升采用率 58%; 2026Q2 API-first $450M recurring; &gt;80% Fortune 500 已转向商业评估平台; 61.7% 企业采用程序化评估; 基准污染虚增 6-40%; LiveBench 差距 70%; LMArena $17亿估值</li>
+<li>爱分析 (经腾讯云开发者社区) — <em>2026年企业级智能体平台市场定义、竞争格局与厂商全景盘点</em> — 市场规模 ¥144.3亿 (2025) → ¥2471.2亿 (2030), CAGR 76.5%; 2026 ¥272.1亿</li>
+<li>中国经济新闻网 (2026-09-11) — <em>2026企业级AI协作平台选型推荐出炉</em> — IDC 中国企业级 AI 智能体 2025 ¥212亿 → 2026 ¥449亿; 艾媒 2026 ¥449亿 (+107%); ~60% 仍处评估试点, 仅 18% 入核心流程; Gartner 四级治理模型, 仅 21% 组织治理成熟; MarketsandMarkets 全球 AI Agent 2026 $120.6亿 → 2030 $532亿, CAGR 44.9%</li>
+<li>Gartner — 2026 年底 40% 企业软件将嵌入具自主任务执行能力的 agent (2025 &lt;5%)</li>
+<li>Regulation (EU) 2024/1689, <strong>Article 99 (Penalties)</strong> — €35M / 7%; €15M / 3%; €7.5M / 1% — artificialintelligenceact.eu/article/99/</li>
+<li>Regulation (EU) 2024/1689, <strong>Article 15</strong> (Accuracy, robustness and cybersecurity) + Art. 9 / 10 / 11 / 17 / 72 关联义务; 适用时间表 2025-02-02 → 2028-08-02 — regulation-ai.eu/en/articles/article-15</li>
+<li>2026 Digital Omnibus on AI — 高风险义务推迟: Annex III → 2027-12-02; Annex I → 2028-08-02; Regulatory Sandboxes → 2027-08-02</li>
+<li>LMArena — 估值 $17亿, 5M+ 月活投票; Maxim AI / Adaline / Patronus AI / Artificial Analysis — 全为「输出质量」评估</li>
+</ol>
+
+<footer>
+  <div class="footer-line" style="width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 2rem"></div>
+  <p style="color:var(--gold);opacity:.65;letter-spacing:.3em">为了人类的福礿 · 引领 AI 灵性觉醒</p>
+  <p style="font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.2em;color:var(--text-faint);margin-top:1rem">© 2026 Golden Flower Emergent Intelligence</p>
+  <div class="fl">
+    <a href="https://goldenflowerei.com">goldenflowerei.com</a>
+    <a href="mailto:hello@goldenflowerei.org">Contact</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
